@@ -1,0 +1,304 @@
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196F3;
+  --white-color: #fff;
+  --black-color: #000;
+  --page-background: #F5F4FA;
+  --page-second-background: #E5E5E5;
+  --footer-background: #2F303A;
+  --footer-adress: rgba(255, 255, 255, 0.6);
+  --footer-goit: rgba(255, 255, 255, 0.4);
+  --portfolio-text-background: rgba(33, 150, 243, 0.9);
+  --hero-development-background: rgba(47, 48, 58, 0.8);
+}
+
+.list {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.none {
+  display: none;
+}
+
+/* body */
+.page {
+  /*background: var(--page-background);*/
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03rem;
+}
+
+ /* page header */
+.page-header {
+  /*background: var(--white-color);*/
+  color: var(--primary-text-color);
+  
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02rem;
+}
+
+
+.logo { /* Web */
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.site-logo { /* Studio*/
+  color: var(--black-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.site-nav .link {
+  color: var(--primary-text-color);
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02rem;
+}
+ 
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color)
+}
+
+.auth-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.hero {
+  background: var(--hero-development-background);
+}
+
+.hero-title {
+  color: var(--white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+}
+
+.feature-title {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+}
+
+.button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-style: normal;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.section-title {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03rem;
+}
+
+.developments-title {
+  color: var(--white-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  /* text-align: center;*/
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+}
+
+.developments-title p {
+  background: var(--hero-development-background);
+}
+
+.team {
+  /*background: var(--page-second-background);*/
+}
+
+.team-title {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.team-list p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;  
+}
+
+.main-footer {
+  background: var(--footer-background);
+}
+
+.footer-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 0.03rem;
+}
+
+.footer-logo-text {
+  color: var(--white-color);
+}
+
+.footer-adress {
+  color: var(--white-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  /* or 171% */
+  letter-spacing: 0.03rem;
+}
+
+.footer-adress a {
+  color: var(--footer-adress);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  /* or 171% */
+  letter-spacing: 0.03rem;  
+}
+
+.footer-soc {
+  color: var(--white-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;  
+}
+
+input {
+  /*background-color: var(--footer-background);*/
+  color: var(--footer-adress);
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  
+  border-radius: 4px;
+}
+
+.button-footer {
+  color: var(--white-color);
+  background-color: var(--accent-color); 
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.9;
+  border-radius: 4px;
+}
+
+.goit {
+  color: var(--footer-goit);
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 2;
+  /* or 200% */
+  
+  text-align: center;
+  letter-spacing: 0.03rem;
+  font-style: normal;
+}
+
+
+.catalog {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06rem;
+}
+
+.catalog-title {
+  color: var(--title-text-color);
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03rem; 
+  font-style: normal;
+}
+
+.catalog-text {
+  background-color: var(--portfolio-text-background);
+  color: var(--white-color);
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.6; 
+  letter-spacing: 0.03rem; 
+  font-style: normal;
+}

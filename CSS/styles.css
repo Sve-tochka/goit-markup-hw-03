@@ -13,6 +13,16 @@
   --hero-development-background: rgba(47, 48, 58, 0.8);
 }
 
+html { /*добавл. из-за того что не все совр.плагины сделаны на border-box */
+  box-sizing: border-box;
+}
+
+*, /*добавл. из-за того что не все совр.плагины сделаны на border-box */
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .list {
   list-style: none;
 }
@@ -132,10 +142,23 @@ a {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /*тень*/
   font-style: normal;
-  border-radius: 4px;
-  text-align: center;
+  border-radius: 4px; /*мягкие углы*/
+  text-align: center; /* выравнивает текст*/
+
+  display: inline-block;
+  padding: 10px 32px; /*по макету*/
+  text-decoration: none;
+
+  align-items: center;
+  letter-spacing: 0.06em;
+}
+
+.button:hover, .button:focus {
+  background-color: #ffe5e5;
+  color: #2d2b55;
+  border: 2px solid #ffcece;
 }
 
 .section-title {
@@ -256,6 +279,19 @@ input {
   font-size: 16px;
   line-height: 1.9;
   border-radius: 4px;
+
+  display: inline-block;
+  padding: 10px 28px 10px 29px; /* картинка куда???*/
+  text-decoration: none;
+}
+
+.btn-icon {
+  background-color: var(--accent-color);
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  margin-right: 6px;
+  vertical-align: middle; /*центрирует иконку по середине*/
 }
 
 .goit {

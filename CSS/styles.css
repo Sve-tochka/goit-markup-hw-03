@@ -14,6 +14,8 @@
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -48,6 +50,10 @@ a {
   letter-spacing: 0.02rem;
 }
 
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .logo { /* Web */
   color: var(--accent-color);
@@ -99,11 +105,14 @@ a {
   color: var(--accent-color);
 }
 
-.hero {
+.hero {  
   background: var(--hero-development-background);
+  /*outline: 4px solid olivedrab;*/
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--white-color);
 
   font-weight: 900;
@@ -136,6 +145,7 @@ a {
   font-style: normal;
   border-radius: 4px; /*мягкие углы*/
   text-align: center; /* выравнивает текст*/
+  min-width: 200px;
 
   display: inline-block;
   padding: 10px 32px; /*по макету*/
@@ -143,12 +153,14 @@ a {
 
   align-items: center;
   letter-spacing: 0.06em;
+  border: 2px solid transparent;
 }
 
 .button:hover, .button:focus {
   background-color: #ffe5e5;
   color: #2d2b55;
   border: 2px solid #ffcece;
+  border: 2px solid transparent;
 }
 
 .section-title {
@@ -261,19 +273,31 @@ input {
   border-radius: 4px;
 }
 
-.button-footer {
+.btn-footer {
   color: var(--white-color);
-  background-color: var(--accent-color); 
+  background: var(--accent-color); 
   font-family: Roboto;
   font-weight: 900;
   font-size: 16px;
   line-height: 1.9;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  min-width: 143px;
+  text-align: center;
 
   display: inline-block;
-  padding: 10px 28px 10px 29px; /* картинка куда???*/
-  text-decoration: none;
+  padding: 10px 28px 10px 29px;
+  text-decoration: none;  
+  border: 2px solid transparent;
 }
+
+
+.btn-footer:hover, .btn-footer:focus {
+  background-color: #ffe5e5;
+  color: #2d2b55;
+  border: 2px solid transparent;
+}
+
 
 .btn-icon {
   background-color: var(--accent-color);
@@ -283,6 +307,7 @@ input {
   margin-right: 6px;
   vertical-align: middle; /*центрирует иконку по середине*/
 }
+
 
 .goit {
   color: var(--footer-goit);
@@ -308,6 +333,7 @@ input {
   letter-spacing: 0.06rem;
 }
 
+
 .catalog-title {
   color: var(--title-text-color);
   font-family: Roboto;
@@ -318,6 +344,7 @@ input {
   font-style: normal;
 }
 
+
 .catalog-text {
   background-color: var(--portfolio-text-background);
   color: var(--white-color);
@@ -327,4 +354,20 @@ input {
   line-height: 1.6; 
   letter-spacing: 0.03rem; 
   font-style: normal;
+}
+
+
+/*.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}*/
+
+
+.conteiner {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--page-second-background);
 }

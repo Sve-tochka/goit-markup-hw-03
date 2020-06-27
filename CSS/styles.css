@@ -41,13 +41,15 @@ a {
 
  /* page header */
 .page-header {
-  /*background: var(--white-color);*/
   color: var(--primary-text-color);
   
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02rem;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 h1 {
@@ -105,6 +107,7 @@ h1 {
   color: var(--accent-color);
 }
 
+/******************************/
 .hero {  
   text-align: center;
   background: var(--hero-development-background);
@@ -113,6 +116,8 @@ h1 {
 
 .hero-title {
   margin-top: 0;
+  margin-bottom: 46px;
+  
   color: var(--white-color);
 
   font-weight: 900;
@@ -120,9 +125,7 @@ h1 {
   line-height: 1.4;
   text-align: center;
   letter-spacing: 0.06rem;
-  text-transform: uppercase;
-
-  margin-bottom: 46px;
+  text-transform: uppercase;  
 }
 
 .feature-title {
@@ -167,8 +170,17 @@ h1 {
   border: 2px solid transparent;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
+  margin: 0;
+  margin-bottom: 50px;
+
   color: var(--primary-text-color);
+
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -178,7 +190,27 @@ h1 {
   letter-spacing: 0.03rem;
 }
 
+.feature li {
+  width: 270px;
+}
+
+.feature img {
+  margin-bottom: 30px;
+}
+
+.feature-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.feature-title-item {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
 .developments-title {
+  margin-left: 30px;
+  
   color: var(--white-color);
 
   font-family: Roboto;
@@ -186,26 +218,24 @@ h1 {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.1;
-  /* text-align: center;*/
+  text-align: center;
   letter-spacing: 0.03rem;
   text-transform: uppercase;
 }
+.developments-title li {
+  padding-right: 30px;
+}
 
 .developments-title p {
+  padding: 27px;
   background: var(--hero-development-background);
 }
 
-.team {
-  /*background: var(--page-second-background);*/
-}
 
-.team-title {
-  color: var(--primary-text-color);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
+/******************************/
+.team {
+  background-color: var(--page-background);/*убрать*/
+  outline: 4px solid rgb(22, 226, 32); /*убрать*/ 
 }
 
 .team-list p {
@@ -216,6 +246,43 @@ h1 {
   line-height: 1.2;  
 }
 
+.team-title {
+  width: 1200px;
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.team img {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.team h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.team p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.social-links {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+/*************************************************/
+.customers li {
+  margin: 0;
+  margin-right: 30px;
+}
+
+/*************************************************/
 .main-footer {
   background: var(--footer-background);
 }
@@ -370,9 +437,10 @@ input {
 
 
 .conteiner {
-  width: 1600px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--page-second-background);/*убрать*/
+  padding-left: 5px;
+  padding-right: 5px;
   outline: 4px solid olivedrab; /*убрать*/
 }

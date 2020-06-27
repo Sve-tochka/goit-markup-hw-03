@@ -27,7 +27,7 @@ a {
   display: none;
 }
 
-/* body */
+/*------------------------------------------------------------------------------*/
 .page {
   /*background: var(--page-background);*/
   color: var(--title-text-color);
@@ -47,12 +47,15 @@ a {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02rem;
+}
 
-  padding-top: 24px;
-  padding-bottom: 25px;
+.main-nav {
+ display: flex;
+ align-items: center;
 }
 
 h1 {
+  margin-right: 85px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -75,7 +78,21 @@ h1 {
   line-height: 1.2;
 }
 
+.site-nav {
+  display: flex;
+}
+
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   
   font-family: Roboto;
@@ -95,6 +112,15 @@ h1 {
   color: var(--accent-color)
 }
 
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
+
 .auth-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
@@ -107,7 +133,7 @@ h1 {
   color: var(--accent-color);
 }
 
-/******************************/
+/*---------------------------------------------------*/
 .hero {  
   text-align: center;
   background: var(--hero-development-background);
@@ -128,6 +154,7 @@ h1 {
   text-transform: uppercase;  
 }
 
+/*---------------------------------------------------*/
 .feature-title {
   color: var(--primary-text-color);
   font-family: Roboto;
@@ -190,10 +217,6 @@ h1 {
   letter-spacing: 0.03rem;
 }
 
-.feature li {
-  width: 270px;
-}
-
 .feature img {
   margin-bottom: 30px;
 }
@@ -208,7 +231,21 @@ h1 {
   margin-bottom: 0px;
 }
 
+.feature .item {
+  width: 270px;
+}
+
+.feature .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature {
+  display: flex;
+}
+
+
 .developments-title {
+  display: flex;
   margin-left: 30px;
   
   color: var(--white-color);
@@ -231,11 +268,15 @@ h1 {
   background: var(--hero-development-background);
 }
 
-
-/******************************/
+/*---------------------------------------------------*/
 .team {
   background-color: var(--page-background);/*убрать*/
   outline: 4px solid rgb(22, 226, 32); /*убрать*/ 
+}
+
+.team-list{
+  display: flex;
+  width: 1200px;
 }
 
 .team-list p {
@@ -276,13 +317,13 @@ h1 {
   margin-bottom: 24px;
 }
 
-/*************************************************/
+/*---------------------------------------------------*/
 .customers li {
   margin: 0;
   margin-right: 30px;
 }
 
-/*************************************************/
+/*---------------------------------------------------*/
 .main-footer {
   background: var(--footer-background);
 }
@@ -429,7 +470,7 @@ input {
 
 
 /*.conteiner {
-  width: 1200px;
+  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -440,7 +481,5 @@ input {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 5px;
-  padding-right: 5px;
   outline: 4px solid olivedrab; /*убрать*/
 }

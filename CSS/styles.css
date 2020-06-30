@@ -141,6 +141,7 @@ h1 {
 }
 
 .hero-title {
+  padding-top: 196px;/*пока поставлю отступ, но это разборием на след.занятии*/
   margin-top: 0;
   margin-bottom: 46px;
   

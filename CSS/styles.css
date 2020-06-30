@@ -162,20 +162,27 @@ h1 {
 }
 
 .feature .item {
-  width: 270px;
-  background-color: pink;
+  width: 270px;  
 }
 
 .feature .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.feature-img { /*????????*/
-  margin-bottom: 30px;
+.feature-img {
+  background: var(--page-background);
+  border-radius: 4px;
+} 
+
+.feature img{ /*????????*/
+  display: block;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .feature-title {
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -248,12 +255,7 @@ h1 {
 
 
 
-
-
-
-
-
-
+/*----------------------------------------------*/
 .developments-title {
   display: flex;
   margin-left: 30px;
@@ -491,5 +493,7 @@ input {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 4px solid olivedrab; /*убрать*/
 }

@@ -156,6 +156,34 @@ h1 {
 }
 
 /*---------------------------------------------------*/
+.feature {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature .item {
+  width: 270px;
+  background-color: pink;
+}
+
+.feature .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature-img { /*????????*/
+  margin-bottom: 30px;
+}
+
+.feature-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.feature-title-item {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
 .feature-title {
   color: var(--primary-text-color);
   font-family: Roboto;
@@ -218,31 +246,12 @@ h1 {
   letter-spacing: 0.03rem;
 }
 
-.feature img {
-  margin-bottom: 30px;
-}
 
-.feature-title {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
 
-.feature-title-item {
-  margin-top: 0;
-  margin-bottom: 0px;
-}
 
-.feature .item {
-  width: 270px;
-}
 
-.feature .item:not(:last-child) {
-  margin-right: 30px;
-}
 
-.feature {
-  display: flex;
-}
+
 
 
 .developments-title {

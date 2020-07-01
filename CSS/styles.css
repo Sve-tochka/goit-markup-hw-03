@@ -497,3 +497,19 @@ input {
   padding-right: 15px;
   outline: 4px solid olivedrab; /*убрать*/
 }
+
+
+/*-----portfolio------*/
+.btn {
+  color: #212121;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03rem;
+}
+

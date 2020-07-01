@@ -447,40 +447,6 @@ input {
 }
 
 
-.catalog {
-  color: var(--primary-text-color);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06rem;
-}
-
-
-.catalog-title {
-  color: var(--title-text-color);
-  font-family: Roboto;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.03rem; 
-  font-style: normal;
-}
-
-
-.catalog-text {
-  background-color: var(--portfolio-text-background);
-  color: var(--white-color);
-  font-family: Roboto;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.6; 
-  letter-spacing: 0.03rem; 
-  font-style: normal;
-}
-
-
 /*.conteiner {
   width: 1170px;
   padding-left: 15px;
@@ -500,7 +466,22 @@ input {
 
 
 /*-----portfolio------*/
+
+/*-----filtr-catalog----------*/
+.filtr-catalog{
+  margin-bottom: 34px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filtr-catalog li + li {
+  margin-left: 8px;
+}
+
 .btn {
+  background-color: var(--page-background);
   color: #212121;
   font-family: Roboto;
   font-style: normal;
@@ -511,5 +492,65 @@ input {
 
   text-align: center;
   letter-spacing: 0.03rem;
+     
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12); /* есть еще text-shadow */
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.btn:focus, 
+.btn:hover {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.filtr {
+  margin: 0;
+  padding: 6px 22px;
+}
+
+/*--------catalog----------*/
+.catalog {}
+
+
+.catalog-item {}
+
+
+.link {}
+
+
+.catalog-item-info {}
+
+
+.catalog-title {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06rem;
+}
+
+
+.catalog-type {
+  color: var(--title-text-color);
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03rem; 
+  font-style: normal;
+}
+
+
+.text {background-color: var(--portfolio-text-background);
+  color: var(--white-color);
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.6; 
+  letter-spacing: 0.03rem; 
+  font-style: normal;
 }
 

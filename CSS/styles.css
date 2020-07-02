@@ -13,6 +13,7 @@
   --hero-development-background: rgba(47, 48, 58, 0.8);
 }
 
+
 .list {
   padding: 0;
   margin: 0;
@@ -259,8 +260,25 @@ h1 {
 .developments-title {
   display: flex;
   justify-content: space-between;
-  margin-left: 30px;
-  
+}
+
+.developments-title-item {
+  width: calc((100% - 30px * 2) / 3);
+}
+
+.developments-title-item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.developments-title p {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  border-radius: 0px 0px 4px 4px;
+
+  background: var(--hero-development-background);
   color: var(--white-color);
 
   font-family: Roboto;
@@ -271,15 +289,6 @@ h1 {
   text-align: center;
   letter-spacing: 0.03rem;
   text-transform: uppercase;
-}
-.developments-title-item {
-  width: calc((100% - 30px * 2) / 3);
-  padding-right: 30px;
-}
-
-.developments-title p {
-  padding: 27px;
-  background: var(--hero-development-background);
 }
 
 /*---------------------------------------------------*/

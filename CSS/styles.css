@@ -138,7 +138,7 @@ h1 {
 .hero {  
   text-align: center;
   background: var(--hero-development-background);
-  outline: 4px solid yellow;/*удалить*/
+  /*outline: 4px solid yellow;*/   /*удалить*/
 }
 
 .hero-title {
@@ -294,7 +294,7 @@ h1 {
 /*---------------------------------------------------*/
 .team {
   background-color: var(--page-background);/*убрать*/
-  outline: 4px solid rgb(22, 226, 32); /*убрать*/ 
+  /*outline: 4px solid rgb(22, 226, 32);*/ /*убрать*/ 
 }
 
 .team-list{
@@ -363,14 +363,15 @@ h1 {
 }
 
 .customers-item {
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  height: 90px;
+
   display: flex;
   justify-content: center;
-  align-content: center;
-  
+  align-items: center;
   width: 170px;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;    
+
 }
 
 /*---------------------------------------------------*/
@@ -378,7 +379,17 @@ h1 {
   background: var(--footer-background);
 }
 
+.main-footer .conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 48px;
+  padding-bottom: 28px;
+}
+
 .footer-logo {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -413,7 +424,18 @@ h1 {
   letter-spacing: 0.03rem;  
 }
 
+address p {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+address a{
+  display: block;
+}
+
 .footer-soc {
+  margin-top: 0;
+  margin-bottom: 20px;
   color: var(--white-color);
   font-family: Roboto;
   font-style: normal;
@@ -422,6 +444,10 @@ h1 {
   line-height: 1.1;
   letter-spacing: 0.03rem;
   text-transform: uppercase;  
+}
+
+.social-links-item:not(:nth-child(4n)) {
+  margin-right: 10px;
 }
 
 input {
@@ -470,10 +496,22 @@ input {
   vertical-align: middle; /*центрирует иконку по середине*/
 }
 
+.by {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  /*outline: 4px solid olivedrab;*/
+}
 
 .goit {
   color: var(--footer-goit);
   font-family: Roboto;
+  font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 2;
@@ -492,7 +530,7 @@ input {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 4px solid olivedrab; /*убрать*/
+  /*outline: 4px solid olivedrab;*/
 }
 
 

@@ -329,7 +329,6 @@
         <ul class="customers list">
           <li class="customers-item"><a href="#"><img src="./images/logo-1.svg" alt="Компания1" /></a></li>
           <li class="customers-item"><a href="#"><img src="./images/logo-2.svg" alt="Компания2" /></a></li>
-          <li class="customers-item"><a href="#"><img src="./images/logo-2.svg" alt="Компания2" /></a></li>
           <li class="customers-item"><a href="#"><img src="./images/logo-3.svg" alt="Компания3" /></a></li>
           <li class="customers-item"><a href="#"><img src="./images/logo-4.svg" alt="Компания4" /></a></li>
           <li class="customers-item"><a href="#"><img src="./images/logo-5.svg" alt="Компания5" /></a></li>
@@ -340,23 +339,24 @@
 
     <!--footer-->
     <footer class="main-footer">
-      <div>
-        <h3 class="footer-logo">
-          <a href="#">
+      <div class="conteiner">
+        <div> <!--Address-->
+          <h3 class="footer-logo">
+            <a href="#">
             <span class="logo"> Web</span>
             <span class="footer-logo-text"> Studio</span>
-          </a>  
-        </h3>
-        <address class="footer-adress">
+            </a>  
+          </h3>
+          <address class="footer-adress">
           <p>г. Киев, пр-т Леси Украинки, 26</p>
           <a href="mailto:info@example.com">info@example.com</a> <br />
           <a href="tel:+380991111111">+38 099 111 11 11</a>
-        </address>
-      </div>
+          </address>
+        </div>
 
-      <div>
-        <h3 class="footer-soc">Присоединяйтесь</h3>
-        <ul class="social-links list">
+        <div> <!--Присоединяйтесь-->
+          <h3 class="footer-soc">Присоединяйтесь</h3>
+          <ul class="social-links list">
 
             <li class="social-links-item">
               <a
@@ -398,13 +398,18 @@
               </a>
             </li>
           </ul>        
+        </div>
+
+        <div> <!--Подпишитесь на рассылку-->
+          <h3 class="footer-soc">Подпишитесь на рассылку</h3>
+          <input type="email" name="email" placeholder="E-mail" required />
+          <button class="btn-footer" type="submit"> Подписаться <img class="btn-icon" src="./images-soc/icon-send.svg" alt="кнопка подписаться"></button>
+        </div>
       </div>
-      <div>
-        <h3 class="footer-soc">Подпишитесь на рассылку</h3>
-        <input type="email" name="email" placeholder="E-mail" required />
-        <button class="btn-footer" type="submit"> Подписаться <img class="btn-icon" src="./images-soc/icon-send.svg" alt="кнопка подписаться"></button>
+
+      <div class="by">
+        <span class="goit">2020 | Developed by GoIT Students</span>
       </div>
-      <span class="goit">2020 | Developed by GoIT Students</span>
     </footer>
   </body>
 </html>
